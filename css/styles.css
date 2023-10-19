@@ -12,9 +12,14 @@ button {
 a {
   text-decoration: none;
 }
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 h2 {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -33,7 +38,30 @@ h3 {
   letter-spacing: 0.4px;
   font-weight: 500;
 }
+.container {
+  width: 1158px;
+  margin-left: auto;
+    margin-right: auto;
+}
 /* Header Styles */
+.page-header {
+  margin-left: auto;
+    margin-right: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.page-header-nav-list {
+  display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-left: 76px;
+}
+.page-header-nav {
+  display: inline-flex;
+}
+
+
 
 /* Logo styles */
 .page-header-logo-link {
@@ -44,6 +72,11 @@ h3 {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   font-weight: 700;
+  display: inline-flex;
+    height: 24px;
+    align-items: center;
+    flex-shrink: 0;
+  
 }
 .page-header-logo-link-item {
   color: #2e2f42;
@@ -77,19 +110,36 @@ h3 {
 }
 .contacts {
   font-style: normal;
+  display: inline-flex;
+  
+}
+.contacts-list {
+  display: inline-flex;
+  gap: 40px;
+  margin-left: 332px;
 }
 
 /* Hero Section  */
 .hero-section {
   flex-shrink: 0;
   background-color: var(--NAVY-BLUE, #2e2f42);
+  padding-top: 188px;
+  padding-bottom: 188px;
+  display:flex;
+  align-items: center;
+  margin-bottom: 0;
 }
+
 .hero-section-title {
   color: var(--WHITE, #fff);
   text-align: center;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  width: 496px;
+  display: flex;
+  justify-content: center;
+
 }
 .hero-section-button {
   background: var(--IRIS, #4d5ae5);
@@ -98,6 +148,13 @@ h3 {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  display: inline-flex;
+    padding: 16px 32px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 48px;
+   
+    
 }
 .hero-section-button:hover {
   background: #404bbf;
@@ -106,11 +163,30 @@ h3 {
   background-color: #404bbf;
 }
 /* Advantages styles */
+.advantages-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .advantages-title {
   color: #fff;
   font-weight: 500;
 }
-
+.advantages-list {
+  display: flex;
+  height: 104px;
+    flex-shrink: 0;
+    
+}
+.advantages-list-item {
+  display: flex;
+    width: 264px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-right: 24px;
+   
+    
+}
 .advantages-list-title {
   color: var(--NAVY-BLUE, #2e2f42);
   font-size: 20px;
@@ -122,37 +198,80 @@ h3 {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+ 
+  
 }
 /* Team styles */
 .team-section {
   background: var(--CLOUD, #f4f4fd);
   flex-shrink: 0;
+  padding-bottom: 120px;
+  padding-top: 120px;
 }
 .team-section-title {
   font-weight: 500;
+  margin-bottom: 72px;
+  
+}
+.team-section-list {
+  display: inline-flex;
+  gap: 24px;
 }
 .team-section-list-item {
   justify-content: center;
   background-color: #ffffff;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  padding-bottom: 32px;
 }
-
+.team-section-img {
+  padding-bottom: 32px;
+}
 /* Portfolio styles */
+.portfolio-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.portfolio-image {
+  padding-bottom: 32px;
+}
+.portfolio-list-item {
+display: inline-flex;
+flex-direction: column;
+padding-bottom: 32px;
+align-items: flex-start;
+}
 .portfolio-title {
   color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
   font-weight: 500;
+  margin-bottom: 72px;
 }
 .portfolio-names {
   color: var(--NAVY-BLUE, #2e2f42);
+  padding-left: 16px;
+}
+.portfolio-text {
+  padding-left: 16px;
 }
 
 /* Footer Styles */
 .page-footer {
   flex-shrink: 0;
   background: var(--NAVY-BLUE, #2e2f42);
+  padding-top: 101px;
+  padding-bottom: 100px;
 }
 .footer-text {
   color: var(--CLOUD, #f4f4fd);
+  width: 264px;
 }
 .page-footer-logo-link {
   color: #4d5ae5;
@@ -163,7 +282,12 @@ h3 {
   text-transform: uppercase;
   font-weight: 700;
 }
-
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
 .page-footer-logo-link-item {
   color: #f4f4fd;
 }
