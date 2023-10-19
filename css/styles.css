@@ -57,6 +57,10 @@ h3 {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .container {
   width: 1158px;
   margin-left: auto;
@@ -98,6 +102,7 @@ h3 {
   display: inline-flex;
   align-items: center;
   flex-shrink: 0;
+  margin-right: 76px;
 }
 .page-header-logo-link-item {
   color: #2e2f42;
@@ -114,6 +119,7 @@ h3 {
 
 .page-header-nav-link {
   color: #2e2f42;
+  padding: 24px 0;
 }
 .page-header-nav-link:hover,
 .page-header-nav-link:focus {
@@ -286,6 +292,7 @@ h3 {
 .portfolio-names {
   color: var(--NAVY-BLUE, #2e2f42);
   padding-left: 16px;
+  margin-bottom: 8px;
 }
 .portfolio-text {
   padding-left: 16px;
@@ -318,7 +325,3 @@ h3 {
   color: #f4f4fd;
 }
 
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
