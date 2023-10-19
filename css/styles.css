@@ -49,6 +49,7 @@ h3 {
     margin-right: auto;
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC)
 }
 
 .page-header-nav-list {
@@ -73,7 +74,6 @@ h3 {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-flex;
-    height: 24px;
     align-items: center;
     flex-shrink: 0;
   
@@ -123,8 +123,6 @@ h3 {
 .hero-section {
   flex-shrink: 0;
   background-color: var(--NAVY-BLUE, #2e2f42);
-  padding-top: 188px;
-  padding-bottom: 188px;
   display:flex;
   align-items: center;
   margin-bottom: 0;
@@ -163,17 +161,14 @@ h3 {
   background-color: #404bbf;
 }
 /* Advantages styles */
-.advantages-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+
 .advantages-title {
   color: #fff;
   font-weight: 500;
 }
 .advantages-list {
   display: flex;
-  height: 104px;
+
     flex-shrink: 0;
     
 }
@@ -205,8 +200,7 @@ h3 {
 .team-section {
   background: var(--CLOUD, #f4f4fd);
   flex-shrink: 0;
-  padding-bottom: 120px;
-  padding-top: 120px;
+
 }
 .team-section-title {
   font-weight: 500;
@@ -230,14 +224,12 @@ h3 {
   padding-bottom: 32px;
 }
 /* Portfolio styles */
-.portfolio-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+  
 }
 .portfolio-image {
   padding-bottom: 32px;
@@ -247,6 +239,7 @@ display: inline-flex;
 flex-direction: column;
 padding-bottom: 32px;
 align-items: flex-start;
+border: 1px solid var(--CORNFLOWER, #E7E9FC);
 }
 .portfolio-title {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -290,4 +283,9 @@ align-items: flex-start;
 }
 .page-footer-logo-link-item {
   color: #f4f4fd;
+}
+
+.section {
+  padding-top: 120px;
+    padding-bottom: 120px;
 }
